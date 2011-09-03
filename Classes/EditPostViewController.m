@@ -376,7 +376,7 @@ NSTimeInterval kAnimationDuration = 0.3f;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
 	if(DeviceIsPad()) {
 		return YES;
-	}else if ((toInterfaceOrientation == UIInterfaceOrientationPortrait)) { 
+	}else if (toInterfaceOrientation == UIInterfaceOrientationPortrait) { 
 		return YES; 
 	}
 	else if ((toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)) {
@@ -785,9 +785,9 @@ NSTimeInterval kAnimationDuration = 0.3f;
     for (i = 0; i < count; i++) {
         NSString *searchString = [stringArray objectAtIndex:i];
 		
-        if (searchRes = [urlText hasPrefix:[searchString capitalizedString]])
-            break;else if (searchRes = [urlText hasPrefix:[searchString lowercaseString]])
-				break;else if (searchRes = [urlText hasPrefix:[searchString uppercaseString]])
+        if ((searchRes = [urlText hasPrefix:[searchString capitalizedString]]))
+            break;else if ((searchRes = [urlText hasPrefix:[searchString lowercaseString]]))
+				break;else if ((searchRes = [urlText hasPrefix:[searchString uppercaseString]]))
 					break;
     }
 	
@@ -1537,7 +1537,7 @@ NSTimeInterval kAnimationDuration = 0.3f;
         return NO;
     }
 }
-
+*/
 /*
 #pragma mark -
 #pragma mark Location methods
